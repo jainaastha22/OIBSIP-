@@ -10,8 +10,8 @@ import java.util.regex.Pattern;
 public class ReservationSystem {
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/ticketdetails";
-    private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "sql@123";
+    private static final String DB_USER = "your_username";
+    private static final String DB_PASSWORD = "your_password";
 
     private static Connection connection;
 
