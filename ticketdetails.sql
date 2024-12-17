@@ -6,10 +6,13 @@ CREATE TABLE reservations (
     passenger_name VARCHAR(255),
     train_number VARCHAR(255),
     class_type VARCHAR(255),
-    journey_date VARCHAR(255),
+    journey_date DATE,
     departure_from VARCHAR(255),
-    destination_to VARCHAR(255)
+    destination_to VARCHAR(255),
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
+
 SELECT user();
 SELECT current_user();
 SELECT user, host,db, command FROM information_schema.processlist;
